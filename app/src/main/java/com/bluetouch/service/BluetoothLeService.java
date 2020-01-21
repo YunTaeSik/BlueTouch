@@ -60,7 +60,6 @@ public class BluetoothLeService extends Service {
     private String realAddress;
     private int subData;
 
-
     @Override
     public void onCreate() {
         //super.onCreate();
