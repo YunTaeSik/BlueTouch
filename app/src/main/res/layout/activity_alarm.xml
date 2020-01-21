@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#02fefa">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#161d75"
+            android:gravity="center"
+            android:text="BlueTouch"
+            android:textColor="#ffffff"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/nav_title_bg"
+        android:gravity="center"
+        android:text="알람"
+        android:textColor="#333333"
+        android:textSize="17dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box04"
+        android:gravity="center"
+        android:text="1번터치=1분씩 증가 \n2번터치= 1시간씩 증가 \n3번터치= 알람 저장후 종료"
+        android:textColor="#662d91" />
+
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        style="@style/MyHoloTimePicker2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/iot_btn_background"
+            android:gravity="center"
+            android:text="예약"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/iot_btn_background"
+            android:gravity="center"
+            android:text="취소"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+
+</LinearLayout>

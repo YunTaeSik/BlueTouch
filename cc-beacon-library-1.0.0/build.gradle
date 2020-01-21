@@ -1,0 +1,2 @@
+configurations.create("default")
+artifacts.add("default", file('cc-beacon-library-1.0.0.jar'))

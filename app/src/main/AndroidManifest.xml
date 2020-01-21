@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bluetouch">
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">>
+        <activity
+            android:name=".blueMain.touchChoice"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".Intro.IntroActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".join.LoginActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".join.JoinActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+        </activity>
+        <activity android:name=".blueMain.BlueMainActivity"></activity>
+        <activity android:name=".blueMain.IotActivity"></activity>
+        <activity
+            android:name=".function.FakeCallActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity android:name=".blueMain.SettingActivity"></activity>
+        <activity
+            android:name=".setting.CallSettingActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".setting.MessageSettingActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".setting.NavigationActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".function.LightActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".function.WeatherActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".function.CameraActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".function.ConsentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".function.DoorlockActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".function.ValveActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".function.AlarmActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity
+            android:name=".function.AlarmViewActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity
+            android:name="com.bluetouch.map.NMapViewer"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+        </activity>
+
+        <activity
+            android:name="com.bluetouch.map.FragmentActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".dialog.touchDialog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".dialog.DeleteDailog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".dialog.SettingDailog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".dialog.BeaconSettingDailog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".dialog.ServiceDailog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".BlueTooth.DeviceScanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <receiver android:name=".service.BluetoothLeServiceReciver">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED"
+                    android:enabled="true" />
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED"
+                    android:enabled="true" />
+                <action
+                    android:name="android.intent.action.PACKAGE_REPLACED"
+                    android:enabled="true" />
+                <action
+                    android:name="android.intent.action.PACKAGE_INSTALL"
+                    android:enabled="true" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="Light_connect"
+                    android:enabled="true" />
+                <action
+                    android:name="Consent_connect"
+                    android:enabled="true" />
+                <action
+                    android:name="Valve_connect"
+                    android:enabled="true" />
+                <action
+                    android:name="Doorlock_connect"
+                    android:enabled="true" />
+                <action
+                    android:name="Touch_choice"
+                    android:enabled="true" />
+            </intent-filter>
+
+        </receiver>
+
+        <service
+            android:name=".service.BluetoothLeService"
+            android:enabled="true" />
+        <service
+            android:name=".service.BluetoothLeService_two"
+            android:enabled="true" />
+        <service
+            android:name=".service.BluetoothLeService_three"
+            android:enabled="true" />
+        <service
+            android:name=".service.BluetoothLeService_Light"
+            android:enabled="true" />
+        <service
+            android:name=".service.BluetoothLeService_Consent"
+            android:enabled="true" />
+        <service
+            android:name=".service.BluetoothLeService_Doorlock"
+            android:enabled="true" />
+        <service
+            android:name=".service.BluetoothLeService_Valve"
+            android:enabled="true" />
+
+
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+</manifest>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box04"
+            android:gravity="center"
+            android:text="각종 기능에 대한 설정은 \n메뉴의 설정으로 가주세요."
+            android:textColor="#662d91" />
+
+        <RelativeLayout
+            android:id="@+id/toplinear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#161d75">
+
+            <ImageView
+                android:id="@+id/logo_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@drawable/logo_3" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomlinear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.9"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/box01"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Item_delete_one"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/item_delete"
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+
+                <TextView
+                    android:id="@+id/redlinear"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"></TextView>
+
+                <TextView
+                    android:id="@+id/redlinear_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#000000"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/box01"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Item_delete_two"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/item_delete"
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+
+                <TextView
+                    android:id="@+id/blueinear"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"></TextView>
+
+                <TextView
+                    android:id="@+id/blueinear_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#000000"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/box01"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Item_delete_three"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/item_delete"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/ornagelinear"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"></TextView>
+
+                <TextView
+                    android:id="@+id/ornagelinear_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#000000"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deletelinear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="right"
+            android:layout_weight="0.725"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/camera"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/technology_1"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/call"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/telephone"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/mail"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/fake_call"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/fake_call_image"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/navigation"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/gps_2"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/weather"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/sun"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/deletelinear2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="right"
+        android:layout_weight="0.725"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/alarm"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/clock"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
