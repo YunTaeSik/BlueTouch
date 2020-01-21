@@ -3,6 +3,9 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT" />
+        </compositeConfiguration>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
@@ -15,16 +18,8 @@
             <option value="$PROJECT_DIR$/sidebar" />
           </set>
         </option>
-        <option name="myModules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Floationg_acction_button" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/cc-beacon-library-1.0.0" />
-            <option value="$PROJECT_DIR$/menu" />
-            <option value="$PROJECT_DIR$/sidebar" />
-          </set>
-        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+        <option name="testRunner" value="PLATFORM" />
       </GradleProjectSettings>
     </option>
   </component>

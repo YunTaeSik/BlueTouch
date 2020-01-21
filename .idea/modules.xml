@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Floationg_acction_button/Floationg_acction_button.iml" filepath="$PROJECT_DIR$/Floationg_acction_button/Floationg_acction_button.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bluetouch_2016_05_23 (2).iml" filepath="$PROJECT_DIR$/bluetouch_2016_05_23 (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/bluetouch.iml" filepath="$PROJECT_DIR$/bluetouch.iml" />
       <module fileurl="file://$PROJECT_DIR$/cc-beacon-library-1.0.0/cc-beacon-library-1.0.0.iml" filepath="$PROJECT_DIR$/cc-beacon-library-1.0.0/cc-beacon-library-1.0.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/menu/menu.iml" filepath="$PROJECT_DIR$/menu/menu.iml" />
       <module fileurl="file://$PROJECT_DIR$/sidebar/sidebar.iml" filepath="$PROJECT_DIR$/sidebar/sidebar.iml" />
