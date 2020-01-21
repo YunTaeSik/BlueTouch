@@ -195,6 +195,7 @@ public class BluetoothLeService extends Service {
             }
         }
 
+
         @Override
         public void onServicesDiscovered(BluetoothGatt gatt, int status) {
             System.out.println("onServicesDiscovered " + status);
