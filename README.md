@@ -26,8 +26,7 @@ BLE를 이용해서 IoT기능을 원터치로 사용가능한 제품인 BlueTouc
 
 
 ## 프로젝트 시연영상  
-[블루터치App과 I.O.T 설명 영상](https://i9.ytimg.com/vi/fmvy0h7fq6o/2.jpg?sqp=CKvLmvEF&rs=AOn4CLDHqSP23HThIHb1IiY5Hl4ibmfLrA)
-
+[![IMAGE ALT TEXT HERE](https://i9.ytimg.com/vi/fmvy0h7fq6o/1.jpg?sqp=CP32h_IF&rs=AOn4CLAKh5x_g1z5KrTB8BXtFM2bZAbAtg)](https://youtu.be/fmvy0h7fq6o)
 
 
 ## 이미지  
